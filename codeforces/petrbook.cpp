@@ -20,9 +20,6 @@ int main(){
                 broke = true;
                 break;
             }
-            else{
-                continue;
-            }
         }
         if(broke){
             break;
@@ -31,6 +28,6 @@ int main(){
             count=0;
         }
     }
-    cout<<count<<endl;
+    cout<<count<<"\n";
     return 0;
 }
