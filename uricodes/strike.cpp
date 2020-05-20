@@ -20,5 +20,5 @@ int main(){
             sum2+=p.second;
         }
     }
-    cout<<(sum1<=sum2?"A greve vai parar":"NAO VAI TER CORTE, VAI TER LUTA!")<<"\n";
+    cout<<(sum1<=sum2?"A greve vai parar.":"NAO VAI TER CORTE, VAI TER LUTA!")<<"\n";
 }
