@@ -10,5 +10,6 @@ int main(){
         (a<=h)?sum+=1:sum+=2;
     }
     cout<<sum<<"\n";
+    
     return 0;
 }
