@@ -21,4 +21,5 @@ int main(){
     else{
         cout<<(c>c1?"Anton":"Danik")<<"\n";
     }
+    return 0;
 }
