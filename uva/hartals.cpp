@@ -13,18 +13,13 @@ int main(){
         while(a--){
             ll c, b=0;
             cin>>c;
-            b = c;
-            while(c <= n){
-                int m=0;
-                m = c%7;
-               if(m == 6 || m == 0){
-                continue;
+           for(int i=c;i<=n;i+=c){
+               int m=0;
+               m = i%7;
+               if(m != 6 && m != 0){
+                   arr[i] = i; 
                }
-               else{
-                arr[c] = c;
-                c+=b;
-               }
-            }
+           }
         }
         for(int i=1;i<=n;i++){
             if(arr[i] != 0){
