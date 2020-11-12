@@ -51,16 +51,13 @@ int main(){
         }
         c = 0;
         for(int i=0;i<v.size();i++){
-            int p=0,a=0,m=0;
+            int p=0,a=0;
             for(int j=0;j<v[i].second.first.size();j++){
                 if(v[i].second.first[j] == 'P'){
                     p++;
                 }
                 else if(v[i].second.first[j] == 'A'){
                     a++;
-                }
-                else{
-                    m++;
                 }
             }
             v[i].second.second = ((double)p/ (double)(p+a))*100.00;
@@ -71,7 +68,6 @@ int main(){
                 }
                 else cout<<" "<<v[i].first;
             }
-            //cout<<v[i].first<<" "<<v[i].second.first<<" "<<v[i].second.second<< "\n";
         }
         cout<<"\n";
         v.clear();
